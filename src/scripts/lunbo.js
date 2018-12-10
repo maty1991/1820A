@@ -12,23 +12,57 @@
  */
 
 // 轮播图
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-        loop: true,
-        effect: 'fade',
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
+//智选，选项卡
+var __Window = $(window);
+var __Body = $(document);
+var topNavObj = {};
+/* 获取屏幕高度 */
+topNavObj.getClientHeight = function () {
+  var clientHeight = __Window.height();
+  this.winHeight = parseInt(clientHeight);
+  return this.winHeight;
+};
+/* 获取当前页面已滚动的高度 */
+topNavObj.getScrollHeight = function () {
+  var scrollTop = __Body.scrollTop();
+  this.scrollTop = parseInt(scrollTop);
+  return this.scrollTop;
+};
+/* 初始化调用 */
+topNavObj.init = function () {
+  this.getClientHeight();
+};
+/* 滚动事件监听 */
+topNavObj.init();
+var topNavDiv = $("#search_layer_fixed"),
+  leftNavDiv = $('#J_fixedNavBar');
+__Window.scroll(function () {
+  var hasScrollTop = topNavObj.getScrollHeight();
+  if (hasScrollTop > topNavObj.winHeight) {
+    topNavDiv.show();
+    leftNavDiv.show();
+  } else {
+    topNavDiv.fadeOut(300);
+    leftNavDiv.fadeOut(300);
+  }
+});

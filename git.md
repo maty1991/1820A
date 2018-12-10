@@ -11,21 +11,21 @@ git命令博客地址[https://blog.csdn.net/l2show/article/details/40742803]
 4.  git reflog  查看版本日志;
 5.  git reset --hard 版本还原;
 6.  git --help 指令提示;
-   
+7.  rm rf 删除仓库
 
 ***
 
 ####提交到远程仓库
 
-1. git remote add origin https://github.com/huaizhiY/1820A.git 
+1. git remote add origin https://github.com/maty1991/1820A.git
    
        添加远程的  "源（可以自定义的名字）" 名字的内容 
 
-   git remote add o https://github.com/huaizhiY/1820A.git 
+   git remote add o https://github.com/maty1991/1820A.git
 
-   git remote -v                //查看当前远程仓库的名字和地址的信息列表。
-   git remote show wepu        //查看远程仓库wepu的信息
-   git remote add test url        //添加名为test的远程仓库。
+   git remote -v                     //查看当前远程仓库的名字和地址的信息列表。
+   git remote show wepu             //查看远程仓库wepu的信息
+   git remote add test url           //添加名为test的远程仓库。
    git remote rename pd paul        //将远程仓库pd名字改为paul
    git remote rm paul                //移除远程仓库paul
 
