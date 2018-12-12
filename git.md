@@ -12,6 +12,7 @@ git命令博客地址[https://blog.csdn.net/l2show/article/details/40742803]
 5.  git reset --hard 版本还原;
 6.  git --help 指令提示;
 7.  rm rf 删除仓库
+8.  git push
 
 ***
 
