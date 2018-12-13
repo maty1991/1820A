@@ -39,6 +39,7 @@ $("#small").mousemove(function (e) {
 	})
 })
 
+//选择图片
 $(function () {
 	$("#bottom li").click(function () {
 		$("#bottom li").eq($(this).index()).addClass("actice").siblings().removeClass("actice");
