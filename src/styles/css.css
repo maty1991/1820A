@@ -1,91 +1,4 @@
-/* 顶部*/
-
-.zc-topbar {
-    position: relative;
-    z-index: 997;
-    height: 29px;
-    font-family: arial;
-    font-size: 12px;
-    line-height: 29px;
-    background: #f5f5f5;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.zc-login {
-    float: left;
-}
-
-.zc-lift {
-    padding: 0 20px 0 0;
-}
-
-.zc-conter {
-    padding: 0 20px 0 0;
-    color: #666;
-}
-
-.zc-menu {
-    float: right;
-    margin: 0 -10px 0 0;
-}
-
-.zc-menu li {
-    float: left;
-    margin: 0 10px;
-    height: 29px;
-    font: 12px/29px arial;
-}
-
-
-
-/* 头部 */
-.header {
-    margin: 0 auto;
-    padding: 30px 0;
-    width: 960px;
-}
-.logo {
-    float: left;
-}
-.logo img {
-    display: block;
-    float: left;
-}
-
-.flow-step li {
-    background: url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;
-}
-.flow-step li {
-    float: left;
-    width: 90px;
-    padding: 0 14px 0 0;
-    background-position: 100% -74px;
-    background-color: #e6e6e6;
-    font: 14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
-    text-align: center;
-}
-.flow-step {
-    float: right;
-    padding: 2px 0 0;
-}
-.flow-step-1 .s1 {
-    background-position: 100% -37px;
-    background-color: #e02d2d;
-    color: #fff;
-}
-.flow-step .s5 {
-    padding: 0;
-    background: #e6e6e6;
-}
-
-/* 内容 */
-
-*{margin:0;padding:0;list-style-type:none;}
+/* *{margin:0;padding:0;list-style-type:none;}
 a{color:#666;text-decoration:none;}
 table{border-collapse:collapse;border-spacing:0;border:0;}
 body{color:#666;font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
@@ -95,11 +8,11 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{display:block}
 *+html .clearfix{min-height:1%}
 .fl{float:left;}
-.fr{float:right;}
-.catbox{width:940px;margin:50px auto;}
+.fr{float:right;} */
+.catbox{width:940px;margin:100px auto;}
 .catbox table{text-align:center;width:100%;}
 .catbox table th,.catbox table td{border:1px solid #CADEFF;}
-.catbox table th{background:#e2f2ff;border-top:3px solid #e14f11;height:30px;}
+.catbox table th{background:#e2f2ff;border-top:3px solid #a7cbff;height:30px;}
 .catbox table td{padding:10px;color:#444;}
 .catbox table tbody tr:hover{background:RGB(238,246,255);}
 .checkbox{width:60px;}
@@ -112,7 +25,7 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .count .add, .count input, .count .reduce{float:left;margin-right:-1px;position:relative;z-index:0;}
 .count .add, .count .reduce{height:23px;width:17px;border:1px solid #e5e5e5;background:#f0f0f0;text-align:center;line-height:23px;color:#444;}
 .count .add:hover, .count .reduce:hover{color:#f50;z-index:3;border-color:#f60;cursor:pointer;}
-.count input{width:50px;height:23px;line-height:15px;border:1px solid #aaa;color:#343434;text-align:center; background-color:#fff;z-index:2;}
+.count input{width:50px;height:25px;line-height:15px;border:1px solid #aaa;color:#343434;text-align:center;padding:4px 0;background-color:#fff;z-index:2;}
 .subtotal{width:150px;color:red;font-weight:bold;}
 .operation span:hover,a:hover{cursor:pointer;color:red;text-decoration:underline;}
  
@@ -141,82 +54,3 @@ clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 #selectedViewList div img{width:100px;height:80px;margin-right:10px;float:left;}
 #selectedViewList div span{display:none;color:#ffffff;font-size:12px;position:absolute;top:0px;right:0px;width:60px;height:18px;line-height:18px;text-align:center;background:#000;cursor:pointer;}
 #selectedViewList div:hover span{display:block;}
-
-
-
-
-
-
-
-
-/* 底部 */
-.footer {
-    margin: 40px auto 0;
-    padding: 5px 0 20px;
-    width: 960px;
-    text-align: center;
-    border-top: 1px solid #e3e3e3;
-}
-
-.footer .links {
-    padding: 14px 0 6px;
-    color: #ccc;
-}
-.footer .links a {
-    margin: 0 10px;
-}
-.footer .copyright {
-    display: inline-block;
-    height: 23px;
-    padding-left: 28px;
-    position: relative;
-    line-height: 23px;
-}
-.authentication {
-    padding-top: 12px;
-}
-.authentication a {
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-.authentication a img{
-    width: 108px;
-    height: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

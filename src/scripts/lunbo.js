@@ -65,4 +65,18 @@ __Window.scroll(function () {
     topNavDiv.fadeOut(300);
     leftNavDiv.fadeOut(300);
   }
-});
+});;
+
+
+
+//跳转
+$("#wrap").on("click", "img", handleImgClick);
+function handleImgClick(event) {
+  var e = event || window.event;
+  var target = e.target || e.srcElement;
+  var iid = $(target).attr("data-iid");
+  var imgMsg = findJson(iid)[0];
+  // console.log(imgMsg)
+  localStorage.setItem("detail", JSON.stringify(imgMsg))
+  location.href = "http://localhost:8001/detail.html"
+}

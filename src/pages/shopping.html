@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,7 @@
     <link rel="icon" href="../images/ooopic_1544621157.ico" />
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/shopping.css">
+    <script src="../scripts/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -53,199 +53,94 @@
     </div>
 
     <!-- 内容 -->
-    <div class="wrapper">
 
-        <form action="/index.php?c=ConfirmOrder" method="post">
-            <input type="hidden" name="buyType" value="2">
-            <div class="cart-state mt">
-                <p>购物车状态<em>（2/30）</em></p>
-                <div class="total"><input name="submitCart" type="submit" value="去结算"><span>总计（不含运费）：<em>¥</em><em
-                            class="total-cart-price">5098</em></span></div>
-            </div>
-            <div class="order-table mt20">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <th class="th-1"><label>
-                                    <!--<input name="checkAllCart" type="checkbox" value="1" checked>全选</label>--></label></th>
-                            <th class="th-2">所选商品</th>
-                            <th class="th-3">单价（元）</th>
-                            <th class="th-4">数量</th>
-                            <th class="th-5">优惠</th>
-                            <th class="th-6">小计（元）</th>
-                            <th class="th-7">操作</th>
-                        </tr>
-
-                        <tr id="merchant_194111">
-                            <td colspan="7" class=" store-infor clearfix">
-                                <div class="shopname"><input name="merchantId[]" type="radio" rel="forshop" value="194111"
-                                        checked="">店铺：<a href="http://www.zol.com/shop_194111/" target="_blank">爱科生活官方旗舰店</a>
-                                </div>
-                                <div class="contact">
-                                    <a class="tag-security" style="margin: 0 -9px 0 0">&nbsp;</a>
-                                </div>
-                                <div class="contact">
-
-                                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3425136661?&gt;&amp;site=qq&amp;menu=yes"><img
-                                            border="0" src="http://wpa.qq.com/pa?p=2:3425136661:52" alt="点击这里给我发消息"
-                                            title="点击这里给我发消息"></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr rel="goods-order" id="cart_2957475" istuan="0">
-                            <td colspan="2" class="s-infor">
-
-                                <input name="cartId[]" type="checkbox" value="2957475" item="item" rel="foritem"
-                                    merchantid="194111" checked="">
-                                <!--新增对购物车已下架商品-->
-                                <a href="http://www.zol.com/detail/cell_phone/huawei/31933781.html" class="pic" target="_blank"><img
-                                        width="80" height="80" src="https://mercrt-fd.zol-img.com.cn/t_s80x80/g5/M00/0C/0E/ChMkJ1vj1bCIC8j7AADA2b6fe-UAAtBzwCom0oAAMDx146.jpg"
-                                        alt="华为 nova 3 6GB+128GB 全网通"></a>
-                                <div class="inforbox">
-                                    <h3 class="tit"><a href="http://www.zol.com/detail/cell_phone/huawei/31933781.html"
-                                            title="华为 nova 3 6GB+128GB 全网通" target="_blank">华为 nova 3 6GB+128GB 全网通</a></h3>
-                                    <div class="security clearfix">
-                                        <a href="http://go.zol.com/topic/3056598.html" title="7天退换货" class="security-a"
-                                            target="_blank"></a>
-                                    </div>
-
-                                    <p>颜色：黑色行货128GB</p>
-                                    <div class="info-con">
-                                        <span>套装：官方标配</span>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td class="s-price ">
-                                <em>2699</em>
-
-                            </td>
-                            <td class="s-amount ">
-                                <div class="buy-num">
-
-                                    <a class="minus" href="javascript:void(0)" title="减一" onclick="$.updateCartnumber({cartId:'2957475', maxNumber:'5', updateType:'minus', costNumber:'1', merchantId:'194111'})">-</a>
-                                    <input type="text" autocomplete="off" class="text-amount" value="1" onblur="$.updateCartnumber({cartId:'2957475', maxNumber:'5',updateType:'change', costNumber:'1', merchantId:'194111'})"
-                                        id="cartNumber_2957475">
-                                    <a class="plus" href="javascript:void(0)" title="加一" onclick="$.updateCartnumber({cartId:'2957475', maxNumber:'5',updateType:'plus', costNumber:'1', merchantId:'194111'})">+</a>
-                                    <div class="tips-2" id="tips_2957475" style="display:none;"></div>
-
-                                    <!--新增对购物车已下架商品-->
-                                </div>
-                            </td>
-                            <td class="s-agio">
-                                <div>−−</div>
-
-
-
-                            </td>
-                            <td class="s-total">
-                                <em id="cartGoodsPcie_2957475">2699</em>
-                            </td>
-                            <td class="s-del">
-                                <div class="s-delbox">
-                                    <a href="javascript:void(0)" title="移入收藏夹" onclick="$.deleteCart({cartId:'2957475', deleteType:'collect'})">移入收藏夹</a>
-                                    <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2957475'})">删除</a>
-                                    <div class="deletebox" style="display:none;" id="zp-cart-2957475">
-                                        <p>确认要删除该商品吗？</p>
-                                        <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2957475', deleteType:'delete'})">是的</a><a
-                                            href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2957475'})">取消</a>
-                                        <i></i>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr rel="goods-order" id="cart_2957474" istuan="0">
-                            <td colspan="2" class="s-infor">
-
-                                <input name="cartId[]" type="checkbox" value="2957474" item="item" rel="foritem"
-                                    merchantid="194111" checked="">
-                                <!--新增对购物车已下架商品-->
-                                <a href="http://www.zol.com/detail/cell_phone/huawei/31933171.html" class="pic" target="_blank"><img
-                                        width="80" height="80" src="https://mercrt-fd.zol-img.com.cn/t_s80x80/g5/M00/0C/0E/ChMkJlvjzd6IDF-0AACl0hg18qYAAtByAJu3bAAAKXq384.jpg"
-                                        alt="华为 nova 3i 6GB+128GB 全网通"></a>
-                                <div class="inforbox">
-                                    <h3 class="tit"><a href="http://www.zol.com/detail/cell_phone/huawei/31933171.html"
-                                            title="华为 nova 3i 6GB+128GB 全网通" target="_blank">华为 nova 3i 6GB+128GB 全网通</a></h3>
-                                    <div class="security clearfix">
-                                        <a href="http://go.zol.com/topic/3056598.html" title="7天退换货" class="security-a"
-                                            target="_blank"></a>
-                                    </div>
-
-                                    <p>颜色：亮黑色厂商指导价128GB</p>
-                                    <div class="info-con">
-                                        <span>套装：官方标配</span>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td class="s-price ">
-                                <em>2399</em>
-
-                            </td>
-                            <td class="s-amount ">
-                                <div class="buy-num">
-
-                                    <a class="minus" href="javascript:void(0)" title="减一" onclick="$.updateCartnumber({cartId:'2957474', maxNumber:'5', updateType:'minus', costNumber:'1', merchantId:'194111'})">-</a>
-                                    <input type="text" autocomplete="off" class="text-amount" value="1" onblur="$.updateCartnumber({cartId:'2957474', maxNumber:'5',updateType:'change', costNumber:'1', merchantId:'194111'})"
-                                        id="cartNumber_2957474">
-                                    <a class="plus" href="javascript:void(0)" title="加一" onclick="$.updateCartnumber({cartId:'2957474', maxNumber:'5',updateType:'plus', costNumber:'1', merchantId:'194111'})">+</a>
-                                    <div class="tips-2" id="tips_2957474" style="display:none;"></div>
-
-                                    <!--新增对购物车已下架商品-->
-                                </div>
-                            </td>
-                            <td class="s-agio">
-                                <div>−−</div>
-
-
-
-                            </td>
-                            <td class="s-total">
-                                <em id="cartGoodsPcie_2957474">2399</em>
-                            </td>
-                            <td class="s-del">
-                                <div class="s-delbox">
-                                    <a href="javascript:void(0)" title="移入收藏夹" onclick="$.deleteCart({cartId:'2957474', deleteType:'collect'})">移入收藏夹</a>
-                                    <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2957474'})">删除</a>
-                                    <div class="deletebox" style="display:none;" id="zp-cart-2957474">
-                                        <p>确认要删除该商品吗？</p>
-                                        <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2957474', deleteType:'delete'})">是的</a><a
-                                            href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2957474'})">取消</a>
-                                        <i></i>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="total-price">商品总价<span>（不含运费）</span>：<em>¥</em><em class="total-cart-price">5098</em></div>
-
-                <div class="order-foot clearfix">
-                    <label>
-                        <!--<input name="checkAllCart" type="checkbox" value="1" checked>全选</label>-->
-                        <a href="javascript:void(0)" onclick="$.deleteAll()">批量删除</a>
-
-                        <a href="http://www.zol.com" class="go-shopping">&lt;&lt;继续购物</a>
-                        <input type="submit" value="去结算" name="submitCart" class="accounting-btn">
-                    </label>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <!-- 底部 -->
-    <div class="wrapper" id="zp-goods-recommend">
-        <div class="modgoods mt20">
-            <ul class="modgoods-tab clearfix">
-                <li class="cur">猜你喜欢</li>
-            </ul>
-            <div class="modgoods-tabbox">
-                <ul class="modgoods-list clearfix">
-                </ul>
-            </div>
+    <div class="catbox">
+        <!-- 使用table标签制作整个购物车的结构和样式 -->
+        <table id="cartTable">
+            <thead>
+            <tr>
+                <th><label>
+                    <input class="check-all check" type="checkbox">  全选</label></th>
+                <th>商品</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- 为每一行商品信息设置类名为:on
+     
+                默认是使用check每种商品中的一个商品，即，默认选中4个不同类型的商品
+            -->
+            <tr class="on">
+                <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+                <td class="goods"><img src="../images/xt1.jpg" alt=""><span>华为 nova 3i 6GB+128GB 全网通</span></td>
+                <td class="price">2399.00</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span></td>
+                <td class="subtotal">2399.00</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr class="on">
+                <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+                <td class="goods"><img src="../images/xt2.jpg" alt=""><span>华为 nova 3i 6GB+128GB 全网通</span></td>
+                <td class="price">3888.50</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span></td>
+                <td class="subtotal">3888.50</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr class="on">
+                <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+                <td class="goods"><img src="../images/xt3.jpg" alt=""><span>华为 nova 3i 6GB+128GB 全网通</span></td>
+                <td class="price">1428.50</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span></td>
+                <td class="subtotal">1428.50</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr class="on">
+                <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+                <td class="goods"><img src="../images/xt4.jpg" alt=""><span>华为 nova 3i 6GB+128GB 全网通</span></td>
+                <td class="price">640.60</td>
+                <td class="count"><span class="reduce"></span>
+                    <input class="count-input" type="text" value="1">
+                    <span class="add">+</span></td>
+                <td class="subtotal">640.60</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <!-- 制作购物车表格下面的结构样式 -->
+        <div class="foot" id="foot">
+            <label class="fl select-all"><input type="checkbox" class="check-all check">  全选</label>
+            <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+            <div class="fr closing" onclick="getTotal();">结 算</div>
+            <!-- 隐藏input标签   -->
+            <input type="hidden" id="cartTotalPrice">
+     
+            <div class="fr total">合计：￥<span id="priceTotal">11957.48</span></div>
+            <div class="fr selected" id="selected">已选商品<span id="selectedTotal">4</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+             <div class="selected-view">
+               <div id="selectedViewList" class="clearfix">
+     
+                <div><img src="../images/xt1.jpg"><span class="del" index="0">取消选择</span></div>
+     
+                <div><img src="../images/xt2.jpg"><span class="del" index="1">取消选择</span></div>
+     
+                <div><img src="../images/xt3.jpg"><span class="del" index="2">取消选择</span></div>
+                 
+                <div><img src="../images/xt4.jpg"><span class="del" index="3">取消选择</span></div>
+               </div>
+                <span class="arrow">◆<span>◆</span></span>
+             </div>
         </div>
     </div>
+
     <!-- 底部 -->
     <div class="footer">
         <p class="links"><a href="">关于商城</a>|<a href="">媒体报道</a></p>
@@ -257,5 +152,5 @@
         </div>
     </div>
 </body>
-
 </html>
+<script src="../scripts/style.js"></script>
