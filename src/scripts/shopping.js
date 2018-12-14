@@ -1,6 +1,4 @@
-  /**
-   * Created by an www.jq22.com
-   */
+// 购物车
   window.onload = function () {
     // 当家在整个js文件的时候，function getElementsByClassName() { [native code] }
     // 这个函数并没有执行

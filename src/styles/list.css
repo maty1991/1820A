@@ -15,9 +15,10 @@
 
 
 .container-goodslist{
-      width: 1260px;
+      width: 1200px;
       margin: 0 auto;
       position: relative;
+      margin-left: 94px;
 }
 .container-goodslist::after{
       content: "";
@@ -26,11 +27,11 @@
 }
 
 .container-goodslist .goods-box{
-      width: 282px;
-      box-shadow: 0 0 5px #eee;
+      width: 260px;
+      /* box-shadow: 0 0 5px #eee; */
       transition: 2s;
       box-sizing: border-box;
-      padding: 10px;
+      /* padding: 10px; */
       border-radius: 5px;
       float: left;
       margin-left: 20px;
@@ -42,19 +43,54 @@
  
 .container-goodslist .good-image img{
       width: 100%;
-      border-radius: 10px 10px 0 0 ;
+      /* border-radius: 10px 10px 0 0 ; */
 }
 
 .container-goodslist .good-title{
       font-size: 14px;
       line-height: 28px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
 }
 .container-goodslist .good-detail {
       display: flex;
       justify-content: space-between;
       padding: 10px 5px;
+}
+
+
+
+
+
+
+/* gouwuche */
+.quick-entry .car-item{
+      text-decoration:none;
+}
+
+.car-list{
+      display: none;
+      position: absolute;
+      top: 36px;
+      /* background: rgba(0,0,0,0.3); */
+      background: #ddd;
+      width: 190px;
+      z-index: 11100;
+}
+.car-list li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: rgb(116, 115, 115) 1px dashed ;
+}
+
+.car-list li img{
+      width: 80px;
 }
