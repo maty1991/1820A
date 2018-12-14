@@ -2,21 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	width: 1200px;
-}
 a{
 	text-decoration: none;
 }
 li{
 	list-style: none;
 }
-body{
-	width: 1518px;
-}
 .ol{
 	display: none;
 }
+
 /*---------------------------div0-------------------*/
 
 #div0 .div0{
@@ -65,7 +60,7 @@ body{
 #div1{
 	width: 1000px;
 	margin:0 auto;
-	height: 740px;
+	height: 640px;
 	border: 1px solid #ededed;
 	border-bottom: 0;
 }
@@ -82,7 +77,7 @@ body{
 }
 #div1 ul li{
 	height: 70px;
-	margin-bottom:15px ;
+	margin-bottom:10px ;
 	margin-left:90px ;
 	color: #666;
 }
@@ -94,7 +89,6 @@ body{
 }
 #div1 ul li div{
 	display: inline-block;
-	line-height: 70px;
 	margin-bottom: -10px;
 }
 #div1 ul li div span{
@@ -129,6 +123,7 @@ body{
 	height: 22px;
 	border: 1px solid #ccc;
 	outline: none;
+	vertical-align: baseline;
 }
 
 #div1 ul li:first-child{
@@ -244,7 +239,7 @@ body{
 #div3{
 	width: 1000px;
 	margin:0 auto;
-	height: 540px;
+	height: 450px;
 }
 #div3 .div3{
 	background-color: #fff;
