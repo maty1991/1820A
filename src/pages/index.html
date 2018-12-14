@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/swiper.min.css">
+  <link rel="stylesheet" href="../styles/list.css">
   <script src="../scripts/jquery-3.3.1.js"></script>
 </head>
 
@@ -47,9 +48,18 @@
       </div>
       <!-- 购物车 -->
       <div class="quick-entry">
-        <a href="#" class="cart">购物车<i class="ico"></i><em class="number">0</em></a>
-        <a href="#" class="coupon">我的优惠券<i class="ico"></i></a>
-        <a href="#" class="order">我的订单<i class="ico"></i></a>
+          <a href="#" class="cart car-item">
+              购物车<i class="ico"></i>
+              <em class="number">0</em>
+              <div class="car-list">
+                      <ul>
+                            
+                      </ul>
+              </div>
+              <input id="clear" type="button" value="清空">
+          </a>
+        <a href="" class="coupon">我的优惠券<i class="ico"></i></a>
+        <a href="" class="order">我的订单<i class="ico"></i></a>
       </div>
       <!-- 搜索拦 -->
       <div class="search-box">
@@ -77,11 +87,11 @@
       <!-- 导航 -->
       <!-- 1级菜单 -->
       <ul class="nav clearfix">
-        <li class="current"><a href="#">首页</a></li>
-        <li><a href="#" target="_blank">团购</a></li>
-        <li><a href="#" target="_blank">电子竞技</a></li>
-        <li><a href="#" target="_blank">本地优选</a></li>
-        <li><a href="#" target="_blank">家电优选</a></li>
+        <li class="current"><a href="index.html">首页</a></li>
+        <li><a href="list.html" target="_blank">列表页</a></li>
+        <li><a href="details.html" target="_blank">详情页</a></li>
+        <li><a href="shopping.html" target="_blank">购物车</a></li>
+        <li><a href="register.html" target="_blank">注册</a></li>
       </ul>
       <!-- 1级菜单 -->
       <div class="category-nav category-nav-on">
@@ -1194,6 +1204,7 @@
 </body>
 
 </html>
+<script src="../scripts/list.js"></script>
 <script src="../scripts/swiper.min.js"></script>
 <script src="../scripts/lunbo.js"></script>
 <script src="../scripts/home.js"></script>

@@ -1,78 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<link rel="stylesheet" href="../styles/dl-zc.css"/>
+		<link rel="stylesheet" href="../styles/reset.css">
+		<script src="../scripts/jquery-3.3.1.js"></script>
+	</head>
+	<body style="background:  #fafafa;">
+		<!---------------div0--------------->
+		<div id="div0">
+			<div class="div0">
+				<img src="../images/1.png" title="z商城" />
+				<span></span>
+				<p>中关村在线旗下网上商城</p>
+				<p>已经有Z商城账号？</p>
+				<a href="#">立即登录</a>
+			</div>
+		</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录-Z商城</title>
-    <link rel="icon" href="../images/bitbug_favicon.ico" />
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/land.css">
-</head>
-
-<body class="login-index">
-
-    <div class="wrapper">
-        <!-- 头部 -->
-        <div class="header clearfix">
-            <div class="register-bar"><a href="#">立即注册</a>还没有Z商城账号？</div>
-            <div class="logo">
-                <a title="Z商城" href="#"><img width="130" height="60" title="Z商城" alt="Z商城" src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png">
-                    <p>中关村在线旗下网上商城</p>
-                </a>
-            </div>
-        </div>
-        <form id="J_loginForm">
-            <div class="login-wrap clearfix">
-                <div class="login-layer">
-                    <div class="login-head clearfix">
-                        <h3 class="curLogin">登录Z商城</h3>
-                    </div>
-                    <!-- 登录Z商城 -->
-                    <div class="login-select">
-                        <div class="login-content" id="J_login_common">
-                            <div class="form-item username">
-                                <input type="text" value="" autocomplete="off" placeholder="用户名" class="text" id="J_loginUser"
-                                    name="zolShopUserName" maxlength="100">
-                            </div>
-                            <div class="form-item">
-                                <input type="password" autocomplete="off" placeholder="密码" class="text" id="J_loginPsw"
-                                    maxlength="20">
-                            </div>
-                            <div class="form-other clearfix">
-                                <label class="autologon"></label>
-                                <a href="#" class="otherLogin-bar mobileLogin-bar" rel="J_phone">手机动态码登录</a>
-                                <a target="_blank" href="#" class="forget-password">忘记密码？</a>
-                            </div>
-                            <input type="button" value="登 录" class="login-layer-btn" id="J_loginBtn">
-                        </div>
-                        <div class="collaborate clearfix">
-                            <div class="xian"></div>
-                            <p>合作账号登录</p>
-                            <div class="xian"></div>
-                        </div>
-                        <div class="login-foot clearfix">
-                            <a target="_blank" class="weixin" href="#"></a>
-                            <a target="_blank" class="sina" href="#"></a>
-                            <a target="_blank" class="qq" href="#"></a>
-                            <a target="_blank" class="alipay" href="#"></a>
-                            <a target="_blank" class="baidu" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <!-- 底部 -->
-    <div class="footer">
-        <div class="wrapper clearfix">
-            <div class="about"><a href="#" target="_blank">关于Z商城</a>|<a href="#" target="_blank">联系我们</a>|<a href="#"
-                    target="_blank">帮助中心</a></div>
-            <div class="copyright">©2018. 中关村在线 版权所有</div>
-        </div>
-    </div>
-</body>
-
+		<!-- ----------div3-------------->
+		
+		<div id="div3">
+			<img src="../images/10.jpg" />
+			<div class="div3">
+				<ul>
+					<li class="li" style="background: #ef5555;">登录Z商城</li>
+					<li class="li">商家登录</li>
+				</ul>
+				<ol class="ol" style="display: block;">
+					<input  type="text" placeholder="手机号/邮箱/用户名" id="shouji"/>
+					<input  type="text" placeholder="密码" id="mima"/>
+					<li>手机动态码登陆<a href="#">忘记密码?</a></li>
+					<input type="button" value="登陆" id="denglu"/>
+					<p>合作账号登陆</p>
+					<li>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</li>
+				</ol>
+				<ol class="ol" >
+					<input  type="text" placeholder="商家账号" disabled/>
+					<input  type="text" placeholder="商家密码" disabled/>
+					<li><a href="#">忘记密码?</a></li>
+					<input type="button" value="登陆"/>
+					
+				</ol>
+			</div>
+					
+		</div>
+		
+				<!--=============div2-------------->
+		<div id="div2">
+			<span>关于Z商城</span>|
+			<span>连系我们</span>|
+			<span>帮住中心</span>
+			<span>©20172017. 中关村在线 版权所有</span>
+		</div>
+		
+	</body>
 </html>
+<script src="../scripts/cookie.js"></script>
+<script src="../scripts/land.js"></script>

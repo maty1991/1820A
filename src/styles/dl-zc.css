@@ -1,0 +1,338 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 1200px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	width: 1518px;
+}
+.ol{
+	display: none;
+}
+/*---------------------------div0-------------------*/
+
+#div0 .div0{
+	padding-top: 30px;
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+}
+#div0 .div0 img{
+	float: left;
+}
+#div0 .div0 span{
+	display: block;
+	float: left;
+	height: 45px;
+	width: 15px;
+	margin-left: 15px;
+	margin-top: 10px;
+	border-left: 2px solid #ededed;
+}
+#div0 .div0 p{
+	display: inline-block;
+	height: 40px;
+	line-height: 70px;
+	float: left;
+}
+#div0 .div0 p:nth-child(3){
+	margin-right: 444px;
+	color: #666;
+}
+#div0 .div0 a{
+	display: inline-block;
+	color: #cd1f1f;
+	height: 26px;
+	width: 80px;
+	line-height: 26px;
+	text-align: center;
+	margin-top: 21px;
+}
+#div0 .div0 a:hover{
+	color: #fff;
+	background: #cd1f1f;
+}
+
+/*---------------------div1----------------*/
+#div1{
+	width: 1000px;
+	margin:0 auto;
+	height: 740px;
+	border: 1px solid #ededed;
+	border-bottom: 0;
+}
+#div1>p{
+	padding: 16px 0 16px 90px;
+	background: #fafafa;
+	font: 18px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	color: #999;
+}
+#div1 ul{
+	float: left;
+	width: 690px;
+	border-right: 1px solid #EDEDED;
+}
+#div1 ul li{
+	height: 70px;
+	margin-bottom:15px ;
+	margin-left:90px ;
+	color: #666;
+}
+#div1 ul li span:first-child{
+	color: #f30;
+}
+#div1 ul li span:last-child{
+	color: #f30;
+}
+#div1 ul li div{
+	display: inline-block;
+	line-height: 70px;
+	margin-bottom: -10px;
+}
+#div1 ul li div span{
+	height: 30px;
+	width: 50px;
+	padding:5px 10px;	
+	border: 1px solid pink;
+}
+#div1 ul li:nth-child(3) a{
+	margin-left: 30px;
+	font-size: 12px;
+}
+#dx{
+	display: none;
+	position: absolute;
+	left: 500px;
+	top: 200px;
+	height: 100px;
+	width: 200px;
+	background: #ecb4b4;
+}
+#div1 ul li p{
+	color: #aaa;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 80px;
+}
+#div1 ul li input{
+	margin: 0 10px 0 0;  
+	padding: 8px 5px;
+	width: 278px;
+	height: 22px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+#div1 ul li:first-child{
+	height: 39px;
+	width: 500px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #e6e6e6;
+}
+#div1 ul li:first-child p{
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+	border-top: 2px solid #c00;
+	width: 250px;
+	height: 38px;
+	line-height: 38px;
+	background: #fff;
+	color: #c00;
+}
+#div1 ul li:first-child p span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 8px;
+	margin-right: 18px;
+	background:url(../images/bg1.png) no-repeat -153px -241px;
+}
+
+#div1 ul li:nth-child(6) input{
+	width: 14px;
+	height: 14px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+#div1 ul li:nth-child(6) a{
+	font-size: 12px;
+}
+#div1 ul li:last-child a{
+	display: block;
+	width: 200px;
+	height: 35px;
+	background: #c00;
+	color: #fff;
+	border-radius:5px ;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 100px;
+	opacity: 0.9;
+}
+
+#div1 ul li:last-child a:hover{
+	opacity: 1;
+}
+#div1 ol{
+	float: left;
+	margin: 50px;
+	width: 170px;
+}
+#div1 ol li p{
+	font-size: 12px;
+	color: #666;
+}
+#div1 ol li{
+	margin: 20px 0;
+}
+#div1 ol li p a:hover{
+	color: #cd1f1f;
+	text-decoration: underline;
+}
+#div1 ol li span{
+	display: block;
+	height: 36px;
+	width: 170px;
+	background: pink url(../images/bg1.png) no-repeat;
+}
+#div1 ol li:nth-child(3) span{
+	background-position:0 -37px ;
+}
+#div1 ol li:nth-child(4) span{
+	background-position:0 -74px ;
+}
+#div1 ol li:nth-child(5) span{
+	background-position:0 -110px ;
+}
+#div1 ol li span:hover{
+	opacity: 0.7;
+}
+/*------------div2-------------*/
+#div2{
+	height: 60px;
+	border-top: 1px solid #EDEDED;
+	font-size:12px;
+	color: #666;
+}
+#div2 span{
+	line-height: 60px;
+	margin:0 30px;
+	cursor: pointer;
+}
+#div2 span:first-child{
+	margin-left: 255px;
+}
+#div2 span:last-child{
+	margin-left: 450px;
+}
+#div2 span:hover{
+	color: red;
+	text-decoration: underline;
+}
+/*--------------div3----------------*/
+
+#div3{
+	width: 1000px;
+	margin:0 auto;
+	height: 540px;
+}
+#div3 .div3{
+	background-color: #fff;
+	width: 478px;
+	height: 350px;
+	display: inline-block;
+	border: 1px solid #ededed;
+	float: right;
+}
+#div3 .div3 ul,#div3 .div3 ol{
+	height: 85px;
+	width: 100%;
+	margin-left: 100px;
+	float: left;
+}
+#div3 .div3 ul li{
+	margin-top: 20px;
+	height: 40px;
+	width: 30%;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 2px solid #EDEDED;
+}
+#div3 .div3 ol input{
+	height: 36px;
+	width: 283px;
+	outline: none;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+#div3 .div3 ol li{
+	color: #666;
+	font-size: 14px;
+}
+#div3 .div3 ol li:nth-child(3) a{
+	font-size: 14px;
+	float: right;
+	margin-right: 190px;
+}
+#div3 .div3 ol input:nth-child(4){
+	cursor: pointer;
+	width: 290px;
+	height: 39px;
+	color: #fff;
+	margin-top: 15px;
+	border: none;
+	background: url(../images/bg2.png) no-repeat 0 0;	
+}
+#div3 .div3 ol input:nth-child(4):hover{
+	background-position: 0 -42px;	
+}
+#div3 .div3 ol>p:nth-child(5){
+	font-size: 12px;
+	color: #666;
+	margin-left: 120px;
+}
+#div3 .div3 ol li:nth-child(6) span{
+	display: inline-block;
+	height:39px;
+	width: 39px;
+	margin-top: 14px;
+	margin-right: 34px;
+	background: url(../images/bg2.png) no-repeat 0 0;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(1){
+	background-position: 0 -81px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(1):hover{
+	background-position: 0 -120px;
+}
+
+#div3 .div3 ol li:nth-child(6) span:nth-child(2){
+	background-position: -38px -81px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(2):hover{
+	background-position: -38px -120px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(3){
+	background-position: -78px -82px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(3):hover{
+	background-position: -78px -120px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(4){
+	background-position: -118px -82px;
+}
+#div3 .div3 ol li:nth-child(6) span:nth-child(4):hover{
+	background-position: -118px -120px;
+}

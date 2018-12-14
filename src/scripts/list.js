@@ -91,7 +91,7 @@ function randomPage(json){
                                           <span>${ele.itemMarks.split(" ")[0]}</span>
                                     </div>
                                     <div>
-                                    <input  class="btn-car" data-iid="${ele.iid}" type="button" value="购物车">
+                                    <input  class="btn-car" data-iid="${ele.iid}" type="button" value="加入购物车">
                                     </div>
                               </div>
                               
@@ -268,13 +268,20 @@ function renderCart(){
       var html = "";
       var cart_json = getCart();
       if(!cart_json) return 0;
+      var sumlist = 0;
       for(var i = 0 ; i < cart_json.length ; i ++){
-            html += `<li><img src="${cart_json[i].show.img}"> <span>${cart_json[i].price}</span> <span>${cart_json[i].count}</span></li>`
+            html += `<li>
+            <img src="${cart_json[i].show.img}"> 
+            <span>${cart_json[i].price}</span> 
+            <span>${cart_json[i].count}</span>
+            </li>`
+            sumlist += cart_json[i].count;
       }
-
+      $(".number").html(sumlist);
       return html;
 }
 
 $("#clear").on("click",function(){
       localStorage.clear("cart");
+      $(".number").html("0")
 })
